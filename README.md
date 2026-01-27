@@ -30,9 +30,59 @@ This project aims to build an intelligent AI agent using **LangChain** and **RAG
 ## Technology Stack
 
 - **LangChain**: Core framework for LLM application development
+- **LangChain OpenAI**: OpenAI integration for LangChain
+- **OpenAI**: Large Language Model API
 - **RAG**: Retrieval-Augmented Generation for enhanced AI capabilities
 - **Python**: Primary programming language
+- **python-dotenv**: Environment variable management
 
 ## Getting Started
 
-_More details coming soon as the project develops..._
+### Prerequisites
+
+- Python 3.8 or higher
+- OpenAI API key
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/RamanaGR/AIAgent-with-LangChain.git
+   cd AIAgent-with-LangChain
+   ```
+
+2. **Create and activate virtual environment**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set up environment variables**
+   - Create a `.env` file in the project root
+   - Add your OpenAI API key:
+     ```
+     OPENAI_API_KEY=your_openai_api_key_here
+     ```
+
+### Running the Example
+
+```bash
+python example.py
+```
+
+### Project Structure
+
+```
+AIAgent-with-LangChain/
+├── venv/                 # Virtual environment (not tracked)
+├── .env                  # Environment variables (not tracked)
+├── .gitignore           # Git ignore file
+├── requirements.txt     # Python dependencies
+├── README.md           # Project documentation
+└── example.py          # Example LangChain script
+```
