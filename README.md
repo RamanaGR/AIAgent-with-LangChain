@@ -63,10 +63,13 @@ This project aims to build an intelligent AI agent using **LangChain** and **RAG
    ```
 
 4. **Set up environment variables**
-   - Create a `.env` file in the project root
-   - Add your OpenAI API key:
+   - Start from the example file:
+     ```bash
+     cp .env.example .env
      ```
-     OPENAI_API_KEY=your_openai_api_key_here
+   - Open `.env` and replace the placeholder with your real OpenAI key:
+     ```bash
+     OPENAI_API_KEY=sk-REPLACE_ME_WITH_YOUR_KEY
      ```
 
 ### Running the Example
@@ -75,14 +78,18 @@ This project aims to build an intelligent AI agent using **LangChain** and **RAG
 python example.py
 ```
 
-### Project Structure
+### Project Structure (simplified)
 
 ```
 AIAgent-with-LangChain/
-├── venv/                 # Virtual environment (not tracked)
-├── .env                  # Environment variables (not tracked)
-├── .gitignore           # Git ignore file
-├── requirements.txt     # Python dependencies
-├── README.md           # Project documentation
-└── example.py          # Example LangChain script
+├── venv/                  # Virtual environment (not tracked)
+├── .env / .env.example    # Environment variables (local / template)
+├── .gitignore             # Git ignore file
+├── requirements.txt       # Python dependencies
+├── README.md              # Top-level project overview
+├── documentation/         # Additional docs & tutorials
+├── rag/                   # RAG demos (storage, retrieval, metadata)
+├── Agents_basics.py       # Simple ReAct-style agent with a time tool
+├── chains_*.py            # Chain composition examples
+└── example.py             # Minimal LangChain example
 ```
