@@ -39,3 +39,8 @@ urllib3==2.6.3
 uuid_utils==0.14.0
 xxhash==3.6.0
 zstandard==0.25.0
+# RAG-specific packages
+langchain-text-splitters==1.1.0
+langchain-community==0.4.1
+langchain-chroma==1.1.0
+chromadb==1.4.1
